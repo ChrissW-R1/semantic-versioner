@@ -150,14 +150,6 @@ public class SemanticVersionTest {
 	}
 
 	/**
-	 * tests if {@link SemanticVersion#setMinor(int))} throws an {@link IllegalArgumentException} on empty main version
-	 */
-	@Test(expected=IllegalArgumentException.class)
-	public void testSetMinorZero() {
-		verFirstIteration.setMinor(0);
-	}
-
-	/**
 	 * Test method for {@link SemanticVersion#getPatch()}.
 	 */
 	@Test
@@ -179,14 +171,6 @@ public class SemanticVersionTest {
 		
 		verFirstRelease.setPatch(rndInt);
 		Assert.assertEquals(rndInt, verFirstRelease.getPatch(), 0);
-	}
-
-	/**
-	 * tests if {@link SemanticVersion#setPatch(int))} throws an {@link IllegalArgumentException} on empty main version
-	 */
-	@Test(expected=IllegalArgumentException.class)
-	public void testSetPatchZero() {
-		verFirstIteration.setMinor(0);
 	}
 
 	/**
